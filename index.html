@@ -190,11 +190,19 @@
             Ookow leverages custom-trained language models to streamline conversation pipelines, automate context synthesis, and maximize information velocity across all your digital platforms.
         </p>
 
-        <div class="cta-container">
+        <!-- <div class="cta-container">
             <div class="email-form">
                 <input type="email" class="email-input" placeholder="Enter your work email..." required>
                 <button class="submit-btn" onclick="alert('Thank you for your interest! We will reach out shortly.')">Join Pilot</button>
             </div>
+        </div> -->
+
+        <div class="cta-container">
+        <!-- Changed to an actual form tag to handle 'Enter' key and mobile submissions cleanly -->
+        <form class="email-form" onsubmit="event.preventDefault(); alert('Thank you for your interest! We will reach out shortly.');">
+            <input type="email" class="email-input" placeholder="Enter your work email..." required>
+            <button type="submit" class="submit-btn">Join Pilot</button>
+        </form>
         </div>
 
         <div class="features-grid">
